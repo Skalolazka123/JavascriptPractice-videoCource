@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="block1">
+        <p>Верхний левый угол:
+            <input type="range" id="rtl" value="0" min="0" max="100" oninput="func1()">
+            <input type="text" id="ttl" value="0">
+        </p>
+        <p>Верхний правый угол:
+            <input type="range" id="rtr" value="0" min="0" max="100" oninput="func1()">
+            <input type="text" id="ttr" value="0">
+        </p>
+        <p>Нижний правый угол:
+            <input type="range" id="rbr" value="0" min="0" max="100" oninput="func1()">
+            <input type="text" id="tbr" value="0">
+        </p>
+        <p>Нижний левый угол:
+            <input type="range" id="rbl" value="0" min="0" max="100"  oninput="func1()">
+            <input type="text" id="tbl" value="0">
+        </p>
+    </div>
+    <div id="block"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
