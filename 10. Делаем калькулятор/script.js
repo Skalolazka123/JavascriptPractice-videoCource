@@ -5,7 +5,7 @@ function getResult(sign) {
 
     num2 = getValue("n2");
     
-    switch (sign) {
+    switch (sign.innerHTML) {
         case "+":
             result = num1 + num2;
             break;
