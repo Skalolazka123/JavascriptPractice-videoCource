@@ -6,17 +6,22 @@ function getResult(sign) {
 
     num2 = document.getElementById("n2").value;
     num2 = parseInt(num2);
-    
-    if (sign === "+") {
-        result = num1 + num2;
-    } else if (sign === "-") {
-        result = num1 - num2;
-    } else if (sign === "*") {
-        result = num1 * num2;
-    } else if (sign === "/") {
-        result = num1 / num2;
+
+    switch (sign) {
+        case "+":
+            result = num1 + num2;
+            break;
+        case "-":
+            result = num1 - num2;
+            break;
+        case "*":
+            result = num1 * num2;
+            break;
+        case "/":
+            result = num1 / num2;
+            break;
     }
-    
+
+
     document.getElementById("out").innerHTML = result;
 };
-
