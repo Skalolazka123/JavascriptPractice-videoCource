@@ -1,12 +1,10 @@
 function getResult(sign) {
     var num1, num2, result;
 
-    num1 = document.getElementById("n1").value;
-    num1 = parseInt(num1);
+    num1 = getValue("n1");
 
-    num2 = document.getElementById("n2").value;
-    num2 = parseInt(num2);
-
+    num2 = getValue("n2");
+    
     switch (sign) {
         case "+":
             result = num1 + num2;
@@ -24,4 +22,9 @@ function getResult(sign) {
 
 
     document.getElementById("out").innerHTML = result;
-};
+}
+
+function getValue(id){
+    var el = document.getElementById(id).value;
+    return parseInt(el);
+}
